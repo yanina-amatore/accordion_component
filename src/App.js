@@ -18,7 +18,7 @@ const faqs = [
   }
 ];
 
-console.log(faqs);
+// console.log(faqs);
 
 export default function App() {
   return (
@@ -29,5 +29,28 @@ export default function App() {
 }
 
 function Accordion() {
-  return <div>TODO</div>;
+  return (
+    <div className="accordion">
+      <ul>
+      {faqs.map((item) => (
+              <AccordionItem itemObj={item} key={item.title} />
+            ))}
+      </ul>
+    </div>
+  );
+}
+
+function AccordionItem({itemObj}) {
+  console.log(itemObj);
+  return(
+    <div className="item">
+      <li>
+        <div>
+          <span className="number">#</span>
+          <p>{itemObj.title}</p>
+          <button>+</button>
+        </div>
+      </li>
+    </div>
+  )
 }
