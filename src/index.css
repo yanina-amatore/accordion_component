@@ -25,7 +25,6 @@ body {
   cursor: pointer;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
-
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
@@ -37,29 +36,37 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: #ced4da;
+  padding: 20px 24px;
 }
 
+.question-style{ 
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
 .title,
 .icon {
   font-size: 24px;
   font-weight: 500;
+  padding: 0px 25px;
 }
 
 .content-box {
-  grid-column: 2 / -1;
-  padding-bottom: 16px;
+  /* grid-column: 2 / -1; */
+  /* padding-bottom: 16px; */
   line-height: 1.6;
+  padding: 24px 24px;
 }
 
-.content-box ul {
+/* .content-box ul {
   color: #868e96;
-  margin-left: 16px;
-  margin-top: 16px;
+  margin-left:20px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
+} */
 
 /* OPEN STATE */
 .open {
