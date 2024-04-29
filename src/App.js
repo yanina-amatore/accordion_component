@@ -57,7 +57,7 @@ function AccordionItem({ num, title, text }) {
           <p className="title"> {title} </p>
           <span className="icon"> {isOpen ? "-" : "+"}</span>
         </div>
-        {isOpen && <div className="context-box">{text}</div>}
+        {isOpen && <div className="content-box">{text}</div>}
       </div>
     </div>
   )
